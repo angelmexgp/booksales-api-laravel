@@ -10,6 +10,6 @@ class BookController extends Controller
     {
         $books = Book::all();
 
-        return view('books.index', compact('books'));
+        return response()->json($books);
     }
 }

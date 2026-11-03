@@ -10,6 +10,6 @@ class AuthorController extends Controller
     {
         $authors = Author::all();
 
-        return view('authors.index', compact('authors'));
+        return response()->json($authors);
     }
 }
